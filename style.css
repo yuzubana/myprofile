@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'KiwiMaru';
+  src: url('./fonts/KiwiMaru-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'mojangles_bold';
+  src: url('./fonts/Mojang-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'mojangles_bold';
+  src: url('./fonts/Mojang-Bold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'mineory';
+  src: url('./fonts/Minercraftory.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+    background-image: url("images/background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parent1 {
+    text-align: center;
+}
+
+.background haikei img {
+    top: 50px;
+    position: relative;
+    width: 40%;
+    height: 200%;
+    opacity: 0.63;
+}
+
+.background haikei2 img {
+    top: 100px;
+    left: 600px;
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    opacity: 1;
+}
+
+.background h1 {
+    top: 90px;
+    left: 820px;
+    position: absolute;
+    font-size: 45px;
+    color: #000000;
+    font-family: 'KiwiMaru';
+}
+
+.background h2 {
+    top: 180px;
+    left: 820px;
+    position: absolute;
+    font-size: 25px;
+    color: #000000;
+    font-family: 'KiwiMaru';
+}
+
+.background h3 {
+    top: 270px;
+    left: 795px;
+    position: absolute;
+    font-size: 35px;
+    color: #000000;
+    font-family: 'mineory';
+}
+
+.background h4 {
+    top: 550px;
+    left: 850px;
+    position: absolute;
+    font-size: 35px;
+    color: #000000;
+    font-family: 'mineory';
+}
+
+.background h10 {
+    top: 380px;
+    left: 620px;
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'mojangles_bold';
+}
+
+.background h11 {
+    top: 410px;
+    left: 620px;
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'mojangles_bold';
+}
+
+.background h12 {
+    top: 440px;
+    left: 752px;
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'mojangles_bold';
+}
+
+.background h13 {
+    top: 470px;
+    left: 620px;
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'mojangles_bold';
+}
+
+.background h14 {
+    top: 500px;
+    left: 620px;
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'mojangles_bold';
+}
+
+.discord {
+    color :#5662F6;
+}
+
+.twitter {
+    color :#1DA1F2;
+}
+
+.Minecraft {
+    color :#2F5E1F;
+}
+
+.instagram {
+  display: inline-block;
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gallery {
+    top: 700px;
+    left: 580px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
+    grid-template-rows: 39% 39%;
+    grid-template-areas:
+        "A A F"
+        "C E E";
+    row-gap: 30px;
+    column-gap: 70px;
+}
+
+.gallery .photoA {
+    grid-area: A;
+    width: 400px;
+    height: 200px;
+}
+
+.gallery .photoC {
+    grid-area: C;
+    width: 200px;
+    height: 200px;
+}
+
+.gallery .photoE {
+    grid-area: E;
+    width: 400px;
+    height: 200px;
+}
+
+.gallery .photoF {
+    grid-area: F;
+    width: 200px;
+    height: 200px;
+    left: -20px;
+    position: absolute;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
