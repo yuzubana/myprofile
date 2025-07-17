@@ -2,30 +2,30 @@
 
 @font-face {
   font-family: 'mojang';
-  src: url(../fonts/Mojang-Regular.ttf) format('truetype');
+  src: url(fonts/Mojang-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'mojang-bold';
-  src: url(../fonts/Mojang-Bold.ttf) format('truetype');
+  src: url(fonts/Mojang-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'ten';
-  src: url(../fonts/BestTen-DOT.otf) format('opentype');
+  src: url(fonts/BestTen-DOT.otf) format('opentype');
 }
 @font-face {
   font-family: 'minory';
-  src: url(../fonts/Minercraftory.ttf) format('truetype');
+  src: url(fonts/Minercraftory.ttf) format('truetype');
 }
 @font-face {
   font-family: 'kiwi';
-  src: url('../fonts/KiwiMaru-Regular.ttf') format('truetype');
+  src: url('fonts/KiwiMaru-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 /* Style.css - Main stylesheet for the application */
 .bg {
   background-color: #000000;
-  background-image: url('../image/back.png');
+  background-image: url('image/back.png');
   width: 100vw;
   height: 100vh;
   background-size: cover;
