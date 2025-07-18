@@ -72,6 +72,18 @@
   pointer-events: none;
 }
 
+#loading-text {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'minory';
+  letter-spacing: 2px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 /* ガラス本体 */
 .glass {
   position: absolute;
