@@ -22,6 +22,15 @@
   font-weight: normal;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* Style.css - Main stylesheet for the application */
 .bg {
   background-color: #000000;
@@ -35,6 +44,43 @@
   left: 0;
   z-index: -1;
 }
+
+#loading-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: #000;
+  transition: opacity 0.8s;
+  opacity: 1;
+  pointer-events: none;
+}
+
+#loading-text {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'minory';
+  letter-spacing: 2px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+#loading-text span {
+  display: inline-block;
+  animation: bounce 0.6s infinite;
+}
+
+#loading-text span:nth-child(1) { animation-delay: 0s; }
+#loading-text span:nth-child(2) { animation-delay: 0.1s; }
+#loading-text span:nth-child(3) { animation-delay: 0.2s; }
+#loading-text span:nth-child(4) { animation-delay: 0.3s; }
+#loading-text span:nth-child(5) { animation-delay: 0.4s; }
+#loading-text span:nth-child(6) { animation-delay: 0.5s; }
+#loading-text span:nth-child(7) { animation-delay: 0.6s; }
+#loading-text span:nth-child(8) { animation-delay: 0.7s; }
+#loading-text span:nth-child(9) { animation-delay: 0.8s; }
 
 .main h1 {
   position: absolute;
@@ -62,35 +108,13 @@
   text-shadow: 2px 2px 8px #000000;
 }
 
-#loading-overlay {
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background: #000;
-  transition: opacity 0.8s;
-  opacity: 1;
-  pointer-events: none;
-}
-
-#loading-text {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  color: #fff;
-  font-size: 2rem;
-  font-family: 'minory';
-  letter-spacing: 2px;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
 /* ガラス本体 */
 .glass {
   position: absolute;
-  top: 500px;
+  top: 550px;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
+  height: 600px;
   width: 100%;
   max-width: 600px;
   padding: 30px;
@@ -126,6 +150,18 @@
   color: #ffffff;
   text-align: center;
   text-shadow: 2px 2px 8px #000000;
+}
+
+.sns-icons {
+  display: flex;
+  gap: 16px; /* アイコン間のスペース */
+  justify-content: center; /* 中央揃えに変更 */
+  align-items: center;
+  margin-top: 8px; 
+}
+
+.sns-icons img {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
 .sns {
