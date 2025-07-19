@@ -87,7 +87,7 @@
   font-size: 50px;
   color: #ffffff;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 45px;
   text-shadow: 2px 2px 8px #000000;
 }
 
@@ -96,7 +96,7 @@
   font-size: 25px;
   color: #ffffff;
   text-align: center;
-  margin-top: -15px;
+  margin-top: -18px;
   text-shadow: 2px 2px 8px #000000;
 }
 
@@ -106,18 +106,30 @@
   top: 550px;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 600px;
   width: 100%;
   max-width: 600px;
+  height: 650px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.1); /* 背景色 */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
-  border-right-color: rgba(255, 255, 255, 0.2);
-  border-bottom-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.5); /* 薄い影 */
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 24px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 1.5px 4px 0 rgba(255,255,255,0.25) inset;
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  /* 光沢感のためのグラデーション */
+  overflow: hidden;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 100%);
+  z-index: 1;
 }
 
 .glass h1 {
@@ -180,12 +192,20 @@
     color :#ad9b97;
 }
 
+.ama {
+    color :#FF9900;
+}
 .insta {
   display: inline-block;
   background: linear-gradient(90deg, #4b67f3, #ff62f5 30%, #ffc964);
   background: -webkit-linear-gradient(0deg, #516eff, #f564eb 30%, #FFCC70);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gray-link {
+  color: #aaa;
+  text-decoration: none;
 }
 
 /* 画面幅600px以下（スマホサイズ）のときフォントサイズと位置を調整 */
